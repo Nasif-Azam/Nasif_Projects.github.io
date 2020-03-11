@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emoji</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    <div class="face">
+        <div class="w_eyes">
+            <div class="b_eyes"></div>
+            <div class="b_eyes"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        document.querySelector('body').addEventListener('mousemove', eyeball);
+
+        function eyeball() {
+            var b_eyes = document.querySelectorAll('.b_eyes');
+            b_eyes.forEach(function(b_eyes) {
+                let x = (b_eyes.getBoundingClientRect().left) + (b_eyes.clientWidth / 2);
+
+                let y = (b_eyes.getBoundingClientRect().top) + (b_eyes.clientHeight / 2);
+
+                let radian = Math.atan2(event.pageX - x, event.pageY - y);
+
+                let rot = (radian * (180 / Math.PI) * -1) + 270;
+                b_eyes.style.transform = "rotate(" + rot + "deg)";
+            })
+        }
+
+    </script>
+</body>
+
+</html>
