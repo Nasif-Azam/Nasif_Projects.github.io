@@ -95,156 +95,6 @@ nav ul li a:hover {
     display: none;
 }
 
-@media (max-width:992px) {
-
-    nav {
-        margin-top: 0px;
-        padding: 19px;
-    }
-
-    nav ul {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: calc(100vh - 80px);
-        padding: 50px 100px;
-        background: rgba(51, 51, 51, 0.781);
-        text-align: center;
-        overflow: auto;
-        transition: 0.5s;
-        flex-direction: column;
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-
-    nav.active ul {
-        opacity: 1;
-        top: 80px;
-        transform: translateY(0%);
-    }
-
-    nav ul li a {
-        font-size: 24px;
-        left: 45%;
-    }
-
-    .toggle {
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
-
-    .toggle::before {
-        content: '';
-        position: absolute;
-        top: 4px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        z-index: 1;
-        box-shadow: 0 10px 0 #fff;
-        transition: 0.5s;
-    }
-
-    .toggle::after {
-        content: '';
-        position: absolute;
-        bottom: 4px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        z-index: 1;
-        transition: 0.5s;
-    }
-
-    nav.active .toggle::before {
-        top: 14px;
-        transform: rotate(45deg);
-        box-shadow: 0 0 0 #fff;
-    }
-
-    nav.active .toggle::after {
-        bottom: 14px;
-        transform: rotate(-45deg);
-    }
-
-    .home .intro {
-        position: relative;
-        padding: 0;
-        width: 100%;
-    }
-}
-
-@media (max-width:575px) {
-
-    .btnBx {
-        display: flex;
-        justify-content: space-around;
-
-    }
-
-    .skillsBx {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .skillsBx li {
-        width: 300px;
-        text-align: center;
-    }
-
-    .skillsBx h3,
-    .skillsBx h2 {
-        font-size: 20px
-    }
-
-    .snake h1 {
-        height: 50px;
-        width: 200px !important;
-        outline: 0;
-        border: 0;
-        margin: 0;
-        padding: 0;
-    }
-
-}
-
-@media (max-width:414px) {
-    nav {
-        width: 414px;
-    }
-
-    .home .intro {
-        margin-top: 20% !important;
-    }
-
-    .btnBx a {
-        display: flex;
-        justify-content: space-around;
-        /* padding: 5px 10px  !important; */
-        width: 150px !important;
-    }
-
-    .skillsBx {
-        width: 100% !important;
-        margin: 0 !important;
-        margin-bottom: 50px !important;
-    }
-}
-@media (max-width:375px) {
-    nav{
-        width: 375px;
-    }
-    nav .logo{
-        font-size: 20px;
-    }
-}
-
 /* Navbar */
 
 /* Home-Intro */
@@ -1228,7 +1078,160 @@ footer h5 {
 
 /*Animation*/
 
+/* Media_Query */
 
+@media (max-width:992px) {
+
+    nav {
+        margin-top: 0px;
+        padding: 19px;
+    }
+
+    nav ul {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 50px 100px;
+        background: rgba(51, 51, 51, 0.781);
+        text-align: center;
+        overflow: auto;
+        transition: 0.5s;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    nav.active ul {
+        opacity: 1;
+        top: 80px;
+        transform: translateY(0%);
+    }
+
+    nav ul li a {
+        font-size: 24px;
+        left: 45%;
+    }
+
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;
+    }
+
+    .toggle::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    nav.active .toggle::before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+
+    nav.active .toggle::after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+    }
+
+    .home .intro {
+        position: relative;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width:575px) {
+
+    .btnBx {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .skillsBx {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skillsBx li {
+        width: 300px;
+        text-align: center;
+    }
+
+    .skillsBx h3,
+    .skillsBx h2 {
+        font-size: 20px
+    }
+
+    .snake h1 {
+        height: 50px;
+        width: 200px !important;
+        outline: 0;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media (max-width:414px) {
+    nav {
+        width: 414px;
+    }
+
+    .home .intro {
+        margin-top: 20% !important;
+    }
+
+    .btnBx a {
+        display: flex;
+        justify-content: space-around;
+        width: 150px !important;
+    }
+
+    .skillsBx {
+        width: 100% !important;
+        margin: 0 !important;
+        margin-bottom: 50px !important;
+    }
+}
+@media (max-width:375px) {
+    nav{
+        width: 375px;
+    }
+    nav .logo{
+        font-size: 20px;
+    }
+    .home .intro {
+        margin-top: 20% !important;
+    }
+}
+/* Media_Query */
 
 /* Scroll Bar */
 ::-webkit-scrollbar {
