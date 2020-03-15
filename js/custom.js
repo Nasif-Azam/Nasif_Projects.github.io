@@ -56,34 +56,6 @@ ityped.init(document.querySelector('.ityped'), {
 
 // Typed
 
-// Flip Clock
-
-var clock = $('.clock').FlipClock({
-    clockFace: 'TwelveHourClock'
-});
-
-// Flip Clock
-
-// Portfolio_Gallery
-
-// $(document).ready(function () {
-//    $(".button").click(function () {
-//        var value = $(this).attr("data-filter");
-//        if (value == "all") {
-//            $(".filter").show("1000");
-//        } else {
-//            $(".filter").not("." + value).hide("1000");
-//            $(".filter").filter("." + value).show("1000");
-//        }
-//        //Add Active Class
-//        $("ul .button").click(function () {
-//            $(this).addClass('active').siblings().removeClass('active');
-//        })
-//    })
-// });
-
-// Portfolio_Gallery
-
 // Contact
 
 function validation() {
@@ -178,24 +150,6 @@ $(document).ready(function () {
         offset: '50%'
     });
 
-
-    $('.social').waypoint(function (direction) {
-        $('.social').addClass('animated fadeIn')
-    }, {
-        offset: '80%'
-    });
-
-    $('.card--part8').waypoint(function (direction) {
-        $('.card--part8').addClass('animated rollIn')
-    }, {
-        offset: '50%'
-    });
-
-    $('.ani1').waypoint(function (direction) {
-        $('.ani1').addClass('animated jackInTheBox')
-    }, {
-        offset: '50%'
-    });
 
 });
 

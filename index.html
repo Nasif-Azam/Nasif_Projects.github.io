@@ -7,31 +7,28 @@
     <title>Nasif Enterprise</title>
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/flipclock.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 
-
     <!-- CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Poppins&display=swap">
+
     <!-- CDN -->
-
-
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="" id="header">
-        <a href="#" class="logo text-uppercase animated">Nasif Enterprise</a>
+        <a href="#" class="logo text-uppercase animated flash slow infinite">Nasif Enterprise</a>
         <ul id="menu">
             <li><a href="#home" class="active" onclick="toggle()">Home</a></li>
             <li><a href="#about" onclick="toggle()">About</a></li>
             <li><a href="#resume" onclick="toggle()">Resume</a></li>
             <li><a href="#services" onclick="toggle()">Services</a></li>
-            <!-- <li><a href="#portfolio" onclick="toggle()">Portfolio</a></li> -->
             <li><a href="#skills" onclick="toggle()">Skills</a></li>
             <li><a href="#contact" onclick="toggle()">Contact</a></li>
         </ul>
@@ -75,11 +72,7 @@
                 </div>
                 <section>
                     <div class="intro">
-                        <div class="clock"></div>
                         <div class="nasif text-center">
-                            <h1 class="text-info">
-                                <marquee>Welcome To my Site</marquee>
-                            </h1>
                         </div>
                         <div class="prof_pic py-3">
                             <img id="prof_pic" src="images/nasif.jpg" alt="designer pic" width="200px" height="200px">
@@ -99,7 +92,7 @@
         </section>
     </section>
 
-    <section class="about col-12" id="about">
+    <section class="about col-12 py-0" id="about">
         <div class="snake py-lg-1">
             <h1 class="text-center">
                 <span></span>
@@ -375,49 +368,6 @@
         </div>
         </div>
     </section>
-    <!-- <section class="portfolio" id="portfolio">
-        <div class="snake py-lg-1">
-            <h1 class="text-center">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Portfolio</h1>
-        </div>
-
-        <div class="portfolioBx">
-            <div class="container">
-                <ul>
-                    <li class="button active" data-filter="all">All</li>
-                    <li class="button" data-filter="website">Website</li>
-                    <li class="button" data-filter="graphics">Graphics</li>
-                    <li class="button" data-filter="psd">PSD</li>
-                    <li class="button" data-filter="logo">Logo</li>
-                    <li class="button" data-filter="application">Application</li>
-                </ul>
-                <div class="containerBx">
-                    <div class="box filter website">Website</div>
-                    <div class="box filter graphics">Graphics</div>
-                    <div class="box filter psd">psd</div>
-                    <div class="box filter logo">logo</div>
-                    <div class="box filter application">application</div>
-                    <div class="box filter website">Website</div>
-                    <div class="box filter graphics">Graphics</div>
-                    <div class="box filter psd">psd</div>
-                    <div class="box filter logo">logo</div>
-                    <div class="box filter application">application</div>
-                    <div class="box filter website">Website</div>
-                    <div class="box filter graphics">Graphics</div>
-                    <div class="box filter psd">psd</div>
-                    <div class="box filter logo">logo</div>
-                    <div class="box filter application">application</div>
-                </div>
-            </div>
-        </div>
-
-
-
-    </section> -->
     <section class="skills" id="skills">
         <div class="snake py-lg-1">
             <h1 class="text-center">
@@ -514,15 +464,20 @@
                             <hr style="background: #333;">
                             <div class="social">
                                 <h4><i class="fa fa-users"></i> Social Communication</h4>
-                                <a id="social_btn" href="#"><i class="fa fa fa-facebook" aria-hidden="true"></i></a>
-                                <a id="social_btn" href="#"><i class="fa fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a id="social_btn" href="#"><i class="fa fa fa-mail-forward" aria-hidden="true"></i></a>
-                                <a id="social_btn" href="#"><i class="fa fa fa-instagram" aria-hidden="true"></i></a>
-                                <a id="social_btn" href="#"><i class="fa fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a id="social_btn" href="https://www.facebook.com/md.nasif850"><i
+                                        class="fa fa fa-facebook" aria-hidden="true"></i></a>
+                                <a id="social_btn" href="https://www.linkedin.com/in/md-nasif-9aa2331a0/"><i
+                                        class="fa fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a id="social_btn"
+                                    href="https://mail.google.com/mail/u/0/?sw=2&token=%5B%22cftp%22,%22012c8dfcab%22,%22gmail_fe_200306.14_p2%22,%22ZyMrc6cBAw-rFZnvtXyj5A%5Cu003d%5Cu003d%22,%227591,7424,7030,7465,6804,7113,7495,7569,7393,7418,7150,7602,7348,7027,7278,7414,7332,7189,7609,7618,7636,7156,7419,7467,7468,6969,7403,7236,7728,7592,7137,7158,7433,7708,7546,7634,7584,7443,7642,6821,7018,7680,7711,6999,7734,7016,6792,7416,7172,7407,6807,7164,7607,7645,6929,6984,7068,7565,7500%22,1%5D&dilte=0&mme=0&gme=1&sme=0#inbox?compose=new"><i
+                                        class="fa fa-envelope" aria-hidden="true"></i></a>
+                                <a id="social_btn" href="https://www.instagram.com/nasifrawry/"><i
+                                        class="fa fa fa-instagram" aria-hidden="true"></i></a>
+                                <a id="social_btn" href="https://github.com/Nasif-Azam"><i class="fa fa fa-github"
+                                        aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
-
                 </form>
             </div>
         </div>
@@ -537,21 +492,27 @@
         </a>
     </div>
 
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
     <script type="text/javascript" src="js/waypoint.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/ityped.min.js"></script>
-    <script type="text/javascript" src="js/flipclock.js"></script>
     <script type="text/javascript" src="js/OnePageNav.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
 
+    <!-- CDN -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
     <!-- CDN -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
-    <!-- CDN -->
+
+
+
+
+
 </body>
 
 </html>
