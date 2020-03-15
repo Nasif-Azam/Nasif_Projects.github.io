@@ -236,7 +236,14 @@ nav ul li a:hover {
         margin-bottom: 50px !important;
     }
 }
-
+@media (max-width:375px) {
+    nav{
+        width: 375px;
+    }
+    nav .logo{
+        font-size: 20px;
+    }
+}
 
 /* Navbar */
 
